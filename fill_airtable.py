@@ -14,8 +14,8 @@ headers = {
     "Content-Type": "application/json"
 }
 
-# List of platforms (update this list with all the valid options in your Airtable)
-platforms = ["Facebook", "Instagram", "Twitter", "LinkedIn", "TikTok", "YouTube"]
+# List of platforms (updated with the valid options in your Airtable)
+platforms = ["Medium", "Blog", "Facebook", "Instagram", "TikTok", "Lemon8"]
 
 # Example of 728 blank rows (customize this block as needed)
 for i in range(728):
