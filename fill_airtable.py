@@ -15,16 +15,16 @@ headers = {
 }
 
 # List of platforms (updated with the valid options in your Airtable)
-platforms = ["Medium", "Blog", "Facebook", "Instagram", "TikTok", "Lemon8"]
+Platform = ["Medium", "Blog", "Facebook", "Instagram", "TikTok", "Lemon8"]
 
 # Example of 728 blank rows (customize this block as needed)
 for i in range(728):
-    Platform = random.choice(platforms)  # Randomly choose a platform for each row
+    Platform = random.choice(Platform)  # Randomly choose a platform for each row
     
     data = {
         "fields": {
             "ID": f"{i+1:04}",  # Automatically generates ID with leading zeros
-            "Platform": {"name": platforms},  # Use the random platform for the row
+            "Platform": {"name": Platform},  # Use the random platform for the row
             "Time": "",
             "Content Type": "Image",
             "Post Content": "",
