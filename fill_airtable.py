@@ -1,6 +1,7 @@
 import os
 import requests
 from dotenv import load_dotenv
+import random
 
 load_dotenv()
 
@@ -13,12 +14,17 @@ headers = {
     "Content-Type": "application/json"
 }
 
+# List of platforms (update this list with all the valid options in your Airtable)
+platforms = ["Facebook", "Instagram", "Twitter", "LinkedIn", "TikTok", "YouTube"]
+
 # Example of 728 blank rows (customize this block as needed)
 for i in range(728):
+    platform = random.choice(platforms)  # Randomly choose a platform for each row
+    
     data = {
         "fields": {
-            "ID": f"{i+1:04}",
-            "Platform": "Facebook",
+            "ID": f"{i+1:04}",  # Automatically generates ID with leading zeros
+            "Platform": {"name": platform},  # Use the random platform for the row
             "Time": "",
             "Content Type": "Image",
             "Post Content": "",
