@@ -24,11 +24,7 @@ for i in range(10):  # test with 10 rows first
             "Post Content": "",
             "Status": "Draft",
             "Link": "",
-            "Tags": [],
-            "Notes": "",
-            "Engagement": "",
             "Trend": "",
-            "Content title": ""
         }
     }
 
