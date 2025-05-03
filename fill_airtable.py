@@ -23,7 +23,6 @@ for i in range(10):  # test with 10 rows first
             "Content Type": "",
             "Post Content": "",
             "Status": "Draft",
-            "Link": [],
             "Trend": "",
         }
     }
