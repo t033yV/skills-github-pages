@@ -19,12 +19,12 @@ platforms = ["Medium", "Blog", "Facebook", "Instagram", "TikTok", "Lemon8"]
 
 # Example of 728 blank rows (customize this block as needed)
 for i in range(728):
-    platform = random.choice(platforms)  # Randomly choose a platform for each row
+    Platform = random.choice(platforms)  # Randomly choose a platform for each row
     
     data = {
         "fields": {
             "ID": f"{i+1:04}",  # Automatically generates ID with leading zeros
-            "Platform": {"name": platform},  # Use the random platform for the row
+            "Platform": {"name": platforms},  # Use the random platform for the row
             "Time": "",
             "Content Type": "Image",
             "Post Content": "",
