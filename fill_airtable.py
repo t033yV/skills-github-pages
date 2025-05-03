@@ -19,11 +19,6 @@ for i in range(10):  # test with 10 rows first
         "fields": {
             "ID": f"{i+1:04}",
             "Platform": "Facebook",  # this is a plain string
-            "Time": "",
-            "Content Type": "",
-            "Post Content": "",
-            "Status": "Draft",
-            "Trend": "",
         }
     }
 
