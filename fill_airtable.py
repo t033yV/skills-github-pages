@@ -20,10 +20,10 @@ for i in range(10):  # test with 10 rows first
             "ID": f"{i+1:04}",
             "Platform": "Facebook",  # this is a plain string
             "Time": "",
-            "Content Type": "Image",
-            "Post Content": "",
+            "Content Type": "",
+            "Post Content": [],
             "Status": "Draft",
-            "Link": "",
+            "Link": [],
             "Trend": "",
         }
     }
