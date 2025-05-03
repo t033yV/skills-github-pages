@@ -1,7 +1,6 @@
 import os
 import requests
 from dotenv import load_dotenv
-import random
 
 load_dotenv()
 
@@ -14,17 +13,12 @@ headers = {
     "Content-Type": "application/json"
 }
 
-# List of platforms (updated with the valid options in your Airtable)
-Platform = ["Medium", "Blog", "Facebook", "Instagram", "TikTok", "Lemon8"]
-
-# Example of 728 blank rows (customize this block as needed)
-for i in range(728):
-    Platform = random.choice(Platform)  # Randomly choose a platform for each row
-    
+# This will now work with single-line text
+for i in range(10):  # test with 10 rows first
     data = {
         "fields": {
-            "ID": f"{i+1:04}",  # Automatically generates ID with leading zeros
-            "Platform": {"name": Platform},  # Use the random platform for the row
+            "ID": f"{i+1:04}",
+            "Platform": "Facebook",  # this is a plain string
             "Time": "",
             "Content Type": "Image",
             "Post Content": "",
@@ -39,11 +33,8 @@ for i in range(728):
         }
     }
 
-    response = requests.post(
-        f"https://api.airtable.com/v0/{BASE_ID}/{TABLE_NAME}",
-        json=data,
-        headers=headers
-    )
+    url = f"https://api.airtable.com/v0/{BASE_ID}/{TABLE_NAME}"
+    response = requests.post(url, json=data, headers=headers)
 
     if response.status_code != 200:
         print(f"Error at row {i+1}: {response.text}")
