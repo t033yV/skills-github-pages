@@ -22,7 +22,6 @@ for i in range(10):  # test with 10 rows first
             "Time": "",
             "Content Type": "Image",
             "Post Content": "",
-            "Publish Date": "",
             "Status": "Draft",
             "Link": "",
             "Tags": [],
