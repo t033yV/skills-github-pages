@@ -21,7 +21,7 @@ for i in range(10):  # test with 10 rows first
             "Platform": "Facebook",  # this is a plain string
             "Time": "",
             "Content Type": "",
-            "Post Content": [],
+            "Post Content": "",
             "Status": "Draft",
             "Link": [],
             "Trend": "",
